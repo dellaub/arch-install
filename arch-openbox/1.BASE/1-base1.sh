@@ -89,16 +89,16 @@ echo -e " \033[1;33m[ $TITLE ]\033[0m "
 							mkdir /mnt/.installscripts 
 						
 						# copy the parts of the installation to the system
-							cp -r ~/arch-install/openbox-i3 /mnt/.installscripts 
+							cp -r ~/arch-install/arch-openbox /mnt/.installscripts 
 				
 						
 						# make them executable
-							chmod +x /mnt/.installscripts/openbox-i3/1.BASE/1-base1.sh
-							chmod +x /mnt/.installscripts/openbox-i3/1.BASE/2-base2.sh
-							chmod +x /mnt/.installscripts/openbox-i3/1.BASE/3-AUR.sh
+							chmod +x /mnt/.installscripts/arch-openbox/1.BASE/1-base1.sh
+							chmod +x /mnt/.installscripts/arch-openbox/1.BASE/2-base2.sh
+							chmod +x /mnt/.installscripts/arch-openbox/1.BASE/3-AUR.sh
 
-							chmod +x /mnt/.installscripts/openbox-i3/2.GUI/0-GUI_installation.sh
-							chmod +x /mnt/.installscripts/openbox-i3/2.GUI/1-SUDOwithPASS.sh
+							chmod +x /mnt/.installscripts/arch-openbox/2.GUI/0-GUI_installation.sh
+							chmod +x /mnt/.installscripts/arch-openbox/2.GUI/1-SUDOwithPASS.sh
 				}	
 
 		# 2	Installation
