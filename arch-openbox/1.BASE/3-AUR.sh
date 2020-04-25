@@ -69,7 +69,7 @@ else
 
 			echo -e " \n\033[1;37m\033[41m[ !! ATTENTION !! ]\033[0m \n"  
 			sleep 2
-			echo -e "\033[1;33m\033[44m[ WHEN PRESENTED WHIT A PROMPT...\n...RUN THIS COMMAND ]\n $ \033[0m\033[1;37m\033[44m . /.installscripts/openbox-i3/2.GUI/0-GUI-installation.sh \033[0m"
+			echo -e "\033[1;33m\033[44m[ WHEN PRESENTED WHIT A PROMPT...\n...RUN THIS COMMAND ]\n $ \033[0m\033[1;37m\033[44m . /.installscripts/arch-openbox/2.GUI/0-GUI-installation.sh \033[0m"
 			sleep 5
 fi
 
