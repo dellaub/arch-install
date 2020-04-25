@@ -152,7 +152,7 @@ echo -e " \033[1;33m[ $TITLE ]\033[0m "
 
 			echo -e " \n\033[1;37m\033[41m[ !! ATTENTION REBOOT AND REMOVE USB !! AFTER REBOOTING...]\033[0m \n"  
 			sleep 2
-			echo -e "\033[1;33m\033[44m[ WHEN PRESENTED WHIT A PROMPT...\n...RUN THIS COMMAND AS A LOW PRIVELEGE USER ]\n # \033[0m\033[1;37m\033[44m . /.installscripts/openbox-i3/1.BASE/3-AUR.sh \033[0m"
+			echo -e "\033[1;33m\033[44m[ WHEN PRESENTED WHIT A PROMPT...\n...RUN THIS COMMAND AS A LOW PRIVELEGE USER ]\n # \033[0m\033[1;37m\033[44m . /.installscripts/arch-openbox/1.BASE/3-AUR.sh \033[0m"
 			sleep 2
 
 		# [ INFORMATION TO UNMOUNT FROM THE USB AND ] #
