@@ -162,7 +162,7 @@ echo -e " \033[1;33m[ $TITLE ]\033[0m "
 
 	echo -e " \033[1;33m\033[44m[ PLEASE, WHEN YOU LOG IN AS ROOT: ]\033[0m "
 	sleep 2
-	echo -e " \033[1;33m\033[44m[ 1 RUN THIS COMMAND $\033[1;37m . /.installscripts/openbox-i3/1.BASE/2-base2.sh \033[0m\033[1;33m]\033[0m "
+	echo -e " \033[1;33m\033[44m[ 1 RUN THIS COMMAND $\033[1;37m . /.installscripts/arch-openbox/1.BASE/2-base2.sh \033[0m\033[1;33m]\033[0m "
 	sleep 2
 	
 		
