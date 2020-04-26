@@ -248,7 +248,10 @@ FINISH(){
 
 	# start volume control
 	volumeicon &
-
+	
+	# Start network applet
+	nm-applet &
+	
 	# reset menu
 	mmaker openbox -f -t xterm &
 	
