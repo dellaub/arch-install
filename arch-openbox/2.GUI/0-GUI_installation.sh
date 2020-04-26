@@ -127,11 +127,11 @@ BASE(){
 		sleep 4
 		
 			sudo pacman -S --noconfirm --needed audacious 				# [ MUSIC PLAYER ]
-			sudo pacman -S --noconfirm --needed vlc 					# [ VIDEO PLAYER ]
-			sudo pacman -S --noconfirm --needed nomacs 					# [ IMAGE VIEWER ]
-			sudo pacman -S --noconfirm --needed gimp					# [ IMAGE MANIPULATION ]
+			sudo pacman -S --noconfirm --needed vlc 				# [ VIDEO PLAYER ]
+			sudo pacman -S --noconfirm --needed nomacs 				# [ IMAGE VIEWER ]
+			sudo pacman -S --noconfirm --needed gimp				# [ IMAGE MANIPULATION ]
 			sudo pacman -S --noconfirm --needed audacity				# [ AUDIO MANIPULATION ]
-			sudo pacman -S --noconfirm --needed k3b 					# [ CD DVD RIPPER ]
+			sudo pacman -S --noconfirm --needed k3b 				# [ CD DVD RIPPER ]
 			sudo pacman -S --noconfirm --needed guvcview	 			# [ WEBCAM SOFTWARE ]
 		
 		
@@ -141,35 +141,36 @@ BASE(){
 		
 			sudo pacman -S --noconfirm --needed redshift 				# [ NIGHT MODE ]
 			sudo pacman -S --noconfirm --needed deepin-clone 			# [ DISK BACKUP TOOL ]
-			sudo pacman -S --noconfirm --needed gnome-multi-writer 		# [ ISO WRITER ]
-			sudo pacman -S --noconfirm --needed udisks2 udiskie 		# [ DISK MOUNTER ]
+			sudo pacman -S --noconfirm --needed gnome-multi-writer 			# [ ISO WRITER ]
+			sudo pacman -S --noconfirm --needed udisks2 udiskie 			# [ DISK MOUNTER ]
 			sudo pacman -S --noconfirm --needed gparted 				# [ DISK MANAGMENT ]					
 			sudo pacman -S --noconfirm --needed galculator 				# [ CALCULATOR ]
 			sudo pacman -S --noconfirm --needed bleachbit 				# [ DISK CLEANER ]
 			sudo pacman -S --noconfirm --needed simple-scan 			# [ SCANNER SOFTWARE ]
-			sudo pacman -S --noconfirm --needed htop 					# [ PROCESS COSUMPTION VIEWER ]				
-			sudo pacman -S --noconfirm --needed lxtask 					# [ TASK MANAGER ]
+			sudo pacman -S --noconfirm --needed htop 				# [ PROCESS COSUMPTION VIEWER ]				
+			sudo pacman -S --noconfirm --needed lxtask 				# [ TASK MANAGER ]
 			sudo pacman -S --noconfirm --needed lxrandr 				# [ DISPLAY SETTINGS ]	
 			sudo pacman -S --noconfirm --needed lxinput 				# [ KEYBOARD AND MOUSE SETTINGS ]	
 			sudo pacman -S --noconfirm --needed blueman 				# [ BLUETOOTH MANAGER ]
-			sudo pacman -S --noconfirm --needed android-file-transfer	# [ ANDROID TOOL ]
-			sudo pacman -S --noconfirm --needed filelight				# [ DISK USAGE APP ] 
+			sudo pacman -S --noconfirm --needed android-file-transfer		# [ ANDROID TOOL ]
+			sudo pacman -S --noconfirm --needed baobab				# [ DISK USAGE APP ] 
 			sudo pacman -S --noconfirm --needed screengrab				# [ SCREENSHOTS ]
+			sudo pacman -S --noconfirm --needed print-manager			# [ PRINTER TOOL ]
+			sudo pacman -S --noconfirm --needed system-config-printer		# [ PRINTER CONFIGURATION APPLET ]
 		
 
 		echo -e " \033[1;33m[ ESSENTIAL APPs ]\033[0m "
 		sleep 4
 		
-			sudo pacman -S --noconfirm --needed albert 					# [ PROGRAM LAUNCHER ]
-			sudo pacman -S --noconfirm --needed firefox qutebrowser		# [ WEB BROWSERS ]
-			sudo pacman -S --noconfirm --needed transmission-gtk 		# [ TORRENT DOWNLOADER ]
+			sudo pacman -S --noconfirm --needed albert 				# [ PROGRAM LAUNCHER ]
+			sudo pacman -S --noconfirm --needed firefox qutebrowser			# [ WEB BROWSERS ]
+			sudo pacman -S --noconfirm --needed transmission-gtk 			# [ TORRENT DOWNLOADER ]
 			sudo pacman -S --noconfirm --needed neovim  				# [ TEXT EDITOR ]
-			sudo pacman -S --noconfirm --needed zathura-pdf-mupdf 		# [ PDF VIEWER ]				
+			sudo pacman -S --noconfirm --needed zathura-pdf-mupdf 			# [ PDF VIEWER ]				
 			sudo pacman -S --noconfirm --needed termite 				# [ TERMINAL ]
 			sudo pacman -S --noconfirm --needed xarchiver 				# [ FILE EXTRACTION ]
 			sudo pacman -S --noconfirm --needed intel-ucode				# [ INTEL CPU MICROCODE ]
-			sudo pacman -S --noconfirm --needed curl					# [ WEB TOOL ]
-			sudo pacman -S --noconfirm --needed openssh					# [ SSH CONNECTION TOOL ]
+
 		
 		
 
@@ -177,13 +178,13 @@ BASE(){
 		sleep 4
 		
 			sudo pacman -S --noconfirm --needed filezilla				# [ SSH AND FTP FILESHARING ]
-			sudo pacman -S --noconfirm --needed weechat					# [ IRC CONSOLE-BASED ]
-			sudo pacman -S --noconfirm --needed discord					# [ VOICE CHAT GROUPS ]			
+			sudo pacman -S --noconfirm --needed weechat				# [ IRC CONSOLE-BASED ]
+			sudo pacman -S --noconfirm --needed discord				# [ VOICE CHAT GROUPS ]			
 			sudo pacman -S --noconfirm --needed neofetch				# [ SYSTEM INFORMATION BANNER ]
-			sudo pacman -S --noconfirm --needed picom					# [ COMPOSITOR ]
-			sudo pacman -S --noconfirm --needed conky 					# [ DESKTOP WIDGET SYSTEM STATS ]
+			sudo pacman -S --noconfirm --needed picom				# [ COMPOSITOR ]
+			sudo pacman -S --noconfirm --needed conky 				# [ DESKTOP WIDGET SYSTEM STATS ]
 			sudo pacman -S --noconfirm --needed virtualbox 				# [ VIRTUALIZATION ]
-			sudo pacman -S --noconfirm --needed virtualbox-guest-utils	# [ VBOX TOOLS ]
+			sudo pacman -S --noconfirm --needed virtualbox-guest-utils		# [ VBOX TOOLS ]
 
 		
 
@@ -193,9 +194,9 @@ BASE(){
 					yay -S --noconfirm --needed yltra-flat-icons		# [ ICON SET ]
 					yay -S --noconfirm --needed simplenote-electron-bin	# [ NOTE ORGANIZER ]
 					yay -S --noconfirm --needed sublime-text-dev 		# [ TEXT EDITOR ]
-					yay -S --noconfirm --needed freeoffice 				# [ PRODUCTIVITY ]
-					yay -S --noconfirm --needed pamac-aur				# [ PACKAGE MANAGMENT ]
-					yay -S --noconfirm --needed timeshift				# [ SYSTEM BACKUP ]
+					yay -S --noconfirm --needed freeoffice 			# [ PRODUCTIVITY ]
+					yay -S --noconfirm --needed pamac-aur			# [ PACKAGE MANAGMENT ]
+					yay -S --noconfirm --needed timeshift			# [ SYSTEM BACKUP ]
 
 		
 
@@ -214,9 +215,9 @@ BASE(){
 		echo -e " \033[1;33m[ OPENBOX TOOLS ]\033[0m "
 		sleep 4
 		
-					yay -S --noconfirm --needed obmenu					# [ OB MENU EDITOR ]
+					yay -S --noconfirm --needed obmenu				# [ OB MENU EDITOR ]
 					yay -S --noconfirm --needed spacefm 				# [ FILE EXPLORER ]
-					yay -S --noconfirm --needed obkey 					# [ KEY BINDING ]
+					yay -S --noconfirm --needed obkey 				# [ KEY BINDING ]
 					yay -S --noconfirm --needed ob-autostart			# [ AUTOSTART APPS ]
 
 }	
