@@ -139,7 +139,7 @@ BASE(){
 		echo -e " \033[1;33m[ UTILITIES APPs ]\033[0m "
 		sleep 4
 		
-			sudo pacman -S --noconfirm --needed redshift 				# [ COLOR CALIBRATION ]
+			sudo pacman -S --noconfirm --needed redshift 				# [ NIGHT MODE ]
 			sudo pacman -S --noconfirm --needed deepin-clone 			# [ DISK BACKUP TOOL ]
 			sudo pacman -S --noconfirm --needed gnome-multi-writer 		# [ ISO WRITER ]
 			sudo pacman -S --noconfirm --needed udisks2 udiskie 		# [ DISK MOUNTER ]
@@ -154,7 +154,7 @@ BASE(){
 			sudo pacman -S --noconfirm --needed blueman 				# [ BLUETOOTH MANAGER ]
 			sudo pacman -S --noconfirm --needed android-file-transfer	# [ ANDROID TOOL ]
 			sudo pacman -S --noconfirm --needed filelight				# [ DISK USAGE APP ] 
-		
+			sudo pacman -S --noconfirm --needed screengrab				# [ SCREENSHOTS ]
 		
 
 		echo -e " \033[1;33m[ ESSENTIAL APPs ]\033[0m "
@@ -248,20 +248,19 @@ FINISH(){
 	mmaker openbox -f -t xterm &
 	
 	# reset Wallpaper 
-	nitrogen --restore 
-
-
-	" > ~/.config/openbox/autostart
+	nitrogen --restore " > ~/.config/openbox/autostart
 
 
 	# SDDM config
 	
-	sudo echo -e "
+	echo -e "
 	# set resolution
 	xrandr --size 1920x1080i &
 
 	# set keyboard
-	setxkbmap be & " >> /usr/share/sddm/Scripts/Xsetup
+	setxkbmap be & " > ~/sddm_autostart
+	sudo cat ~/sddm_autostart >> /usr/share/sddm/scripts/Xsetup
+	rm ~/sddm_autostart
 
 	# set editor variables
 		export VISUAL=nano
