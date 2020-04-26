@@ -227,6 +227,9 @@ FINISH(){
 ############################################################################################
 
 
+	# create home folders
+	mkdir ~/Desktop ~/Images ~/Downloads ~/Music ~/Documents ~/Videos
+	
 	
 	# Create autostart file for openbox
 	mkdir ~/.config/openbox
