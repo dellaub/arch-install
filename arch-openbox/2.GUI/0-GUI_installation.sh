@@ -157,6 +157,7 @@ BASE(){
 			sudo pacman -S --noconfirm --needed screengrab				# [ SCREENSHOTS ]
 			sudo pacman -S --noconfirm --needed print-manager			# [ PRINTER TOOL ]
 			sudo pacman -S --noconfirm --needed system-config-printer		# [ PRINTER CONFIGURATION APPLET ]
+			sudo pacman -S --noconfirm --needed cbatticon				# [ POWER MANAGEMENT ICON ]
 		
 
 		echo -e " \033[1;33m[ ESSENTIAL APPs ]\033[0m "
