@@ -261,37 +261,6 @@ sleep 1
 
 
 
-
-echo -e " \033[1;33m[ # GTK THEME ]\033[0m "
-sleep 1
-
-		GTK_CONFIG="/.installscripts/arch-openbox/2.GUI/config_files/theme/Dark-Orange-Metal/"
-		TARGET_LOCATION_GTK="~/.themes/"
-		 
-
-					# ADD configs with original files
-					sudo mv -r $GTK_CONFIG $TARGET_LOCATION_GTK
-
-
-
-
-
-
-echo -e " \033[1;33m[ # ICONS ]\033[0m "
-sleep 1
-
-		ICON_CONFIG="/.installscripts/arch-openbox/2.GUI/config_files/icons/Dark-Orange-Metal-icons"					
-		TARGET_LOCATION_ICON="~/.icons/"
-
-			
-					# ADD configs with original files
-					sudo mv -r $ICON_CONFIG $TARGET_LOCATION_ICON
-
-
-
-
-
-
 echo -e " \033[1;33m[ # TINT2 ]\033[0m "
 sleep 1
 
