@@ -174,8 +174,7 @@ BASE(){
 			sudo pacman -S --noconfirm --needed xarchiver 				# [ FILE EXTRACTION ]
 			sudo pacman -S --noconfirm --needed intel-ucode				# [ INTEL CPU MICROCODE ]
 
-		
-		
+	
 
 		echo -e " \033[1;33m[ EXTRA APPs ]\033[0m "
 		sleep 4
@@ -219,6 +218,44 @@ BASE(){
 					yay -S --noconfirm --needed ob-autostart			# [ AUTOSTART APPS ]
 
 }	
+
+############################################################################################
+GAMING(){
+############################################################################################
+
+
+		echo -e " \033[1;33m[ GAMING ]\033[0m "
+		sleep 4
+
+			# Enable multilib mirrors
+			sudo sed 's/#[multilib]/[multilib]/g' /etc/pacman.conf > pac.tmp
+			sudo sed 's/#Include = /etc/pacman.d/mirrorlist/Include = /etc/pacman.d/mirrorlist/g' pac.tmp > pac2.tmp
+			sudo mv pac2.tmp pacman.conf 
+			sudo rm pac.tmp
+			sudo pacman -Syu --noconfirm
+			
+			# Drivers AMD
+			sudo pacman -S --noconfirm --needed	lib32-mesa vulkan-radeon lib32-vulkan-radeon
+			sudo pacman -S --noconfirm --needed vulkan-icd-loader lib32-vulkan-icd-loader
+			
+			# Wine Dependencies
+			sudo pacman -S --noconfirm --needed wine-staging giflib lib32-giflib 
+			sudo pacman -S --noconfirm --needed libpng lib32-libpng libldap lib32-libldap 
+			sudo pacman -S --noconfirm --needed gnutls lib32-gnutls mpg123 lib32-mpg123 openal 
+			sudo pacman -S --noconfirm --needed lib32-openal v4l-utils lib32-v4l-utils libpulse 
+			sudo pacman -S --noconfirm --needed lib32-libpulse libgpg-error lib32-libgpg-error 
+			sudo pacman -S --noconfirm --needed alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib 
+			sudo pacman -S --noconfirm --needed libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite 
+			sudo pacman -S --noconfirm --needed libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt 
+			sudo pacman -S --noconfirm --needed libgcrypt lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader 
+			sudo pacman -S --noconfirm --needed lib32-opencl-icd-loader libxslt lib32-libxslt libva 
+			sudo pacman -S --noconfirm --needed lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs 
+			sudo pacman -S --noconfirm --needed lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader
+			
+			# Gaming Platform (Lutris)
+			sudo pacman -S --noconfirm --needed lutris
+
+	}
 
 
 ############################################################################################
@@ -313,10 +350,11 @@ FINISH(){
 ##############
 # COMMANDS ###
 ##############
-##			##
-	BASE 	##
-   CONFIG	##
-   FINISH 	##
-##			##
+##############
+BASE 	######
+GAMING	######
+CONFIG	######
+FINISH 	######
+##############
 ##############
 ##############
