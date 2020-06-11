@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+  <menu id="root-menu" label="OpenBox 3">
+    <item label="            OpenBox            ">
+      <action name="reconfigure"/>
+    </item>
+    <separator/>
+    <item label=" Terminal">
+      <action name="Execute">
+        <command>termite</command>
+      </action>
+    </item>
+    <separator/>
+    <menu id="1" label=" Development">
+      <menu id="1-41710" label="Text Editors">
+        <item label="Nano">
+          <action name="Execute">
+            <execute>termite -e nano</execute>
+          </action>
+        </item>
+        <item label="Vim">
+          <action name="Execute">
+            <execute>termite -e nvim</execute>
+          </action>
+        </item>
+        <item label="Sublime Text 3 ">
+          <action name="Execute">
+            <execute>subl3</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="1-4479" label="Environment">
+        <item label="Python 2.7">
+          <action name="Execute">
+            <execute>termite -e python2.7</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="1-5479" label="Qt toolkit">
+        <item label="Qt Assistant" icon="/usr/share/icons/hicolor/32x32/apps/assistant.png">
+          <action name="Execute">
+            <execute>assistant</execute>
+          </action>
+        </item>
+        <item label="Qt Linguist" icon="/usr/share/icons/hicolor/16x16/apps/linguist.png">
+          <action name="Execute">
+            <execute>linguist</execute>
+          </action>
+        </item>
+        <item label="Qt QDbusViewer" icon="/usr/share/icons/hicolor/32x32/apps/qdbusviewer.png">
+          <action name="Execute">
+            <execute>qdbusviewer</execute>
+          </action>
+        </item>
+        <item label="Qt Designer">
+          <action name="Execute">
+            <execute>designer</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="5" label=" Internet">
+      <menu id="5-215433" label="Web Browsers">
+        <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
+          <action name="Execute">
+            <execute>firefox</execute>
+          </action>
+        </item>
+        <item label="quteBrowser" icon="/usr/share/icons/hicolor/16x16/apps/qutebrowser.png">
+          <action name="Execute">
+            <execute>qutebrowser</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="5-745434" label="Torrent">
+        <item label="Transmission">
+          <action name="Execute">
+            <execute>transmission-gtk</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="5-925434" label="File Sharing">
+        <item label="FileZilla" icon="/usr/share/icons/hicolor/16x16/apps/filezilla.png">
+          <action name="Execute">
+            <execute>filezilla</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="root-menu-361310" label=" Image">
+      <menu id="root-menu-361310-731327" label="Viewer">
+        <item label="NoMacs">
+          <action name="Execute">
+            <execute>nomacs</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-361310-271327" label="Editor">
+        <item label="GIMP" icon="/usr/share/icons/hicolor/16x16/apps/gimp.png">
+          <action name="Execute">
+            <execute>gimp</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="root-menu-68150" label=" Audio">
+      <menu id="32168" label="DAW">
+        <item label="Butwig">
+          <action name="Execute">
+            <command>/home/dr0x/.wine/drive_c/Program\ Files/Bitwig\ Studio/Bitwig\ Studio.exe</command>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-68150-30158" label="Player">
+        <item label="Audacious" icon="/usr/share/icons/hicolor/48x48/apps/audacious.png">
+          <action name="Execute">
+            <execute>audacious</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="n56468" label="Mixer">
+        <item label=" Mixxx">
+          <action name="Execute">
+            <command>mixxx</command>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-68150-18158" label="Editor">
+        <item label="Audacity" icon="/usr/share/icons/hicolor/16x16/apps/audacity.png">
+          <action name="Execute">
+            <execute>audacity</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="root-menu-741843" label=" Video">
+      <menu id="root-menu-741843-71853" label="Player">
+        <item label="VLC" icon="/usr/share/icons/hicolor/16x16/apps/vlc.png">
+          <action name="Execute">
+            <execute>vlc</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-741843-111852" label="Webcam">
+        <item label="GuvcView" icon="/usr/share/icons/hicolor/128x128/apps/guvcview.png">
+          <action name="Execute">
+            <execute>guvcview</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="3" label=" Office">
+      <item label="FreeOffice PlanMaker" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-planmaker.png">
+        <action name="Execute">
+          <execute>freeoffice-planmaker</execute>
+        </action>
+      </item>
+      <item label="FreeOffice Presentations" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-presentations.png">
+        <action name="Execute">
+          <execute>freeoffice-presentations</execute>
+        </action>
+      </item>
+      <item label="FreeOffice TextMaker" icon="/usr/share/icons/hicolor/16x16/apps/freeoffice-textmaker.png">
+        <action name="Execute">
+          <execute>freeoffice-textmaker</execute>
+        </action>
+      </item>
+      <item label="Simplenote" icon="/usr/share/icons/hicolor/16x16/apps/simplenote.png">
+        <action name="Execute">
+          <execute>simplenote</execute>
+        </action>
+      </item>
+    </menu>
+    <menu id="3543" label=" Gaming ">
+      <item label=" Steam ">
+        <action name="Execute">
+          <command>steam</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="7" label=" Communication">
+      <menu id="7-1535" label="VoIP">
+        <item label="Discord" icon="/usr/share/pixmaps/discord.png">
+          <action name="Execute">
+            <execute>discord</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="7-32535" label="IRC">
+        <item label="WeeChat">
+          <action name="Execute">
+            <execute>termite -e weechat</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <menu id="4" label=" Tools">
+      <item label=" Program Launcher">
+        <action name="Execute">
+          <execute>albert</execute>
+        </action>
+      </item>
+      <menu id="4-91137" label=" Disk Tools">
+        <item label="Disk Cleaner" icon="/usr/share/pixmaps/bleachbit.png">
+          <action name="Execute">
+            <execute>bleachbit</execute>
+          </action>
+        </item>
+        <item label="Disk Usage">
+          <action name="Execute">
+            <execute>baobab</execute>
+          </action>
+        </item>
+        <item label="Disk Partitioning" icon="/usr/share/icons/hicolor/16x16/apps/gparted.png">
+          <action name="Execute">
+            <execute>gparted</execute>
+          </action>
+        </item>
+        <item label="Disk Cloning">
+          <action name="Execute">
+            <execute>deepin-clone-pkexec</execute>
+          </action>
+        </item>
+        <item label="System Backup ">
+          <action name="Execute">
+            <execute>sudo timeshift-gtk</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-19140" label=" Task Manager">
+        <item label="Kill Process">
+          <action name="Execute">
+            <execute>xkill</execute>
+          </action>
+        </item>
+        <item label="Htop">
+          <action name="Execute">
+            <execute>termite -e htop</execute>
+          </action>
+        </item>
+        <item label="Task Manager">
+          <action name="Execute">
+            <execute>lxtask</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-291152" label=" Virtualization">
+        <item label="VirtualBox" icon="/usr/share/icons/hicolor/16x16/mimetypes/virtualbox.png">
+          <action name="Execute">
+            <execute>virtualbox</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-211923" label=" System information">
+        <item label="Conky-Manager">
+          <action name="Execute">
+            <execute>conky-manager</execute>
+          </action>
+        </item>
+        <item label="Hardware Topology">
+          <action name="Execute">
+            <execute>lstopo</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-44616" label=" Documents">
+        <item label="PDF viewer">
+          <action name="Execute">
+            <execute>zathura</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-95913" label=" CD Burning">
+        <item label="K3b" icon="/usr/share/icons/hicolor/16x16/apps/k3b.png">
+          <action name="Execute">
+            <execute>k3b</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-19438" label=" Virtual Disk">
+        <item label="ISO Mounter">
+          <action name="Execute">
+            <command>furiusisomount</command>
+          </action>
+        </item>
+        <item label="ISO USB Writer">
+          <action name="Execute">
+            <execute>gnome-multi-writer</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-04249" label=" Printer">
+        <item label="Printer Configuration">
+          <action name="Execute">
+            <execute>system-config-printer</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-791627" label=" Scanner">
+        <item label="Document Scanner">
+          <action name="Execute">
+            <execute>simple-scan</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="4-841044" label=" Android">
+        <item label="File transfer" icon="/usr/share/icons/hicolor/512x512/apps/android-file-transfer.png">
+          <action name="Execute">
+            <execute>android-file-transfer</execute>
+          </action>
+        </item>
+      </menu>
+      <item label=" Calculator">
+        <action name="Execute">
+          <execute>galculator</execute>
+        </action>
+      </item>
+      <item label=" File Archiver">
+        <action name="Execute">
+          <execute>xarchiver</execute>
+        </action>
+      </item>
+      <item label=" Screenshot">
+        <action name="Execute">
+          <command>screengrab</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="8" label=" File Explorer">
+      <item label="~/">
+        <action name="Execute">
+          <command>pcmanfm ~/</command>
+        </action>
+      </item>
+      <item label="~/.config">
+        <action name="Execute">
+          <command>pcmanfm ~/.config</command>
+        </action>
+      </item>
+      <item label="~/Downloads">
+        <action name="Execute">
+          <command>pcmanfm ~/Downloads</command>
+        </action>
+      </item>
+      <item label="~/Images">
+        <action name="Execute">
+          <command>pcmanfm ~/Images</command>
+        </action>
+      </item>
+      <item label="~/Music">
+        <action name="Execute">
+          <command>pcmanfm ~/Music</command>
+        </action>
+      </item>
+      <item label="~/Videos">
+        <action name="Execute">
+          <command>pcmanfm ~/Videos</command>
+        </action>
+      </item>
+      <item label="~/Desktop">
+        <action name="Execute">
+          <command>pcmanfm ~/Desktop</command>
+        </action>
+      </item>
+    </menu>
+    <separator/>
+    <menu id="root-menu-802030" label=" Settings">
+      <menu id="root-menu-802030-912111" label=" Display">
+        <menu id="32156" label="Compositor">
+          <item label="ON">
+            <action name="Execute">
+              <command>picom</command>
+            </action>
+          </item>
+          <item label="OFF">
+            <action name="Execute">
+              <command>pkill picom</command>
+            </action>
+          </item>
+          <item label="Configuration">
+            <action name="Execute">
+              <command>subl3 ~/.config/picom/picom.conf</command>
+            </action>
+          </item>
+        </menu>
+        <item label=" Night Mode">
+          <action name="Execute">
+            <execute>redshift-gtk</execute>
+          </action>
+        </item>
+        <item label=" Screen Resolution">
+          <action name="Execute">
+            <execute>lxrandr</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-802030-942111" label=" OpenBox">
+        <item label="Autostart config">
+          <action name="Execute">
+            <execute>ob-autostart</execute>
+          </action>
+        </item>
+        <item label="Menu editor">
+          <action name="Execute">
+            <execute>obmenu3</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-802030-972111" label=" Desktop">
+        <menu id="root-menu-802030-972111-582637" label="Theme">
+          <item label="Configuration">
+            <action name="Execute">
+              <execute>lxappearance</execute>
+            </action>
+          </item>
+          <item label="Creator">
+            <action name="Execute">
+              <execute>oomox-gui</execute>
+            </action>
+          </item>
+        </menu>
+        <item label="Wallpaper">
+          <action name="Execute">
+            <execute>nitrogen</execute>
+          </action>
+        </item>
+        <item label="Panel (tint2)" icon="tint2conf">
+          <action name="Execute">
+            <execute>tint2conf</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-802030-664755" label=" Audio">
+        <item label="PulseAudio Sound Control">
+          <action name="Execute">
+            <execute>pavucontrol</execute>
+          </action>
+        </item>
+        <item label="ALSA Mixer">
+          <action name="Execute">
+            <execute>termite -e alsamixer</execute>
+          </action>
+        </item>
+        <item label="Volume icon">
+          <action name="Execute">
+            <execute>volumeicon</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="23" label=" Network">
+        <item label="Configure Connection">
+          <action name="Execute">
+            <command>nm-connection-editor</command>
+          </action>
+        </item>
+        <item label="Activate Connection">
+          <action name="Execute">
+            <command>termite -e nmtui</command>
+          </action>
+        </item>
+      </menu>
+      <menu id="50" label="  Bluetooth">
+        <item label="Bluetooth Manager">
+          <action name="Execute">
+            <command>blueman-manager</command>
+          </action>
+        </item>
+        <item label="Bluetooth Adapters">
+          <action name="Execute">
+            <command>bluetooth-adapters</command>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-802030-242111" label=" Input">
+        <item label=" Mouse">
+          <action name="Execute">
+            <execute>lxinput</execute>
+          </action>
+        </item>
+        <item label=" Keyboard ">
+          <action name="Execute">
+            <execute>lxinput</execute>
+          </action>
+        </item>
+        <item label=" Keybinds">
+          <action name="Execute">
+            <execute>obkey</execute>
+          </action>
+        </item>
+      </menu>
+      <menu id="new_id" label="  Power">
+        <item label=" Battery status">
+          <action name="Execute">
+            <command>New Command</command>
+          </action>
+        </item>
+      </menu>
+      <menu id="root-menu-802030-612110" label=" Package Management">
+        <item label="Add / Remove Software">
+          <action name="Execute">
+            <execute>pamac-manager</execute>
+          </action>
+        </item>
+        <item label=" Software Update">
+          <action name="Execute">
+            <execute>pamac-manager --updates</execute>
+          </action>
+        </item>
+      </menu>
+    </menu>
+    <separator/>
+    <menu id="45" label="System">
+      <item label="">
+        <action name="exit"/>
+      </item>
+      <item label="">
+        <action name="Execute">
+          <command>reboot</command>
+        </action>
+      </item>
+      <item label="">
+        <action name="Execute">
+          <command>poweroff</command>
+        </action>
+      </item>
+    </menu>
+  </menu>
+</openbox_menu>
